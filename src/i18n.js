@@ -1,0 +1,281 @@
+// Bilingual content (EN / RO)
+const I18N = {
+  en: {
+    nav: { work: 'Work', about: 'About', resume: 'Résumé', other: 'Other', contact: 'Contact' },
+    hero: {
+      kicker: 'Portfolio · 2026',
+      name: 'Raiu Robert-Mihai',
+      lines: ['Associate Software Engineer', 'C++ · IoT · Web'],
+      tagline: 'I build professional embedded software by day and good-looking, functional websites after hours.',
+      status: 'Available for freelance web projects',
+      ctaWork: 'See the work',
+      ctaContact: 'Get in touch',
+      scroll: 'Scroll',
+    },
+    work: {
+      eyebrow: 'Selected web work',
+      title: 'Live work,\nshipped end-to-end.',
+      openLive: 'Open live site',
+      viewCase: 'Case notes',
+      items: [
+        {
+          id: 'hobbymoto',
+          n: '01',
+          name: 'Hobbymoto',
+          kind: 'E-commerce · Motorcycles',
+          url: 'https://hobbymoto.vercel.app/ro/motociclete-rulate',
+          tags: ['Next.js', 'i18n', 'Catalog', 'Responsive'],
+          summary: 'A Romanian marketplace for new and second hand motorcycles with filtered search, localized routing and a finance-calculator flow.',
+          notes: [
+            'Purpose: a Romanian marketplace connecting buyers and sellers of new and second-hand motorcycles in one place',
+            'Locale-aware routing (/ro) with slug-safe URLs and SEO-friendly metadata per listing',
+            'Server-rendered catalog with faceted filters — brand, engine size, year, price, condition',
+            'Finance calculator tuned to the local used-bike market (down payment, term, monthly rate)',
+            'Responsive listing cards with image galleries and saved-search support',
+            'Stack: Next.js app router, TypeScript, deployed on Vercel',
+          ],
+          year: '2025',
+        },
+        {
+          id: 'detalii3',
+          n: '02',
+          name: 'Detalii3D',
+          kind: '3D-printing · E-commerce',
+          url: 'https://detalii3.com',
+          tags: ['Shop', 'Custom parts', 'Lead flow', 'SEO'],
+          summary: 'An e-commerce storefront for my own 3D-printing studio — printed and painted figurines, useful decorations and accessories, plus a lead form for custom commissions and small-batch production runs.',
+          notes: [
+            'Purpose: storefront for my own 3D-printing studio — sells printed and painted figurines, decorations and accessories',
+            'Dual flow: ready-to-ship catalog for in-stock items + custom-quote intake form for commissions',
+            'Lead form routes commission requests straight to the workshop queue with attached references',
+            'Product pages show material, dimensions and finish options with real photos from the bench',
+            'Built around the physical workshop bottleneck — listed capacity reflects actual print and paint time',
+            'Self-managed end-to-end: design, print, paint, ship, iterate',
+          ],
+          year: '2024',
+        },
+      ],
+    },
+    about: {
+      eyebrow: 'About',
+      title: 'Engineer’s logic,\ndesigner’s eye.',
+      body: [
+        'I’m an Associate Software Engineer with a Mechatronics background and a C++ core — the same structured thinking that keeps embedded systems honest is what I bring to a website.',
+        'The difference is that I also spend my evenings printing and painting figurines, accessories and decorations for Detalii3D, my own 3D-printing studio. That means the sites I build are engineered to work and composed to look the part — no vibe-coded mess, just considered, deliberate design.',
+        'For the specifics of my day-to-day engineering work, LinkedIn and the résumé below have the full picture.',
+      ],
+      stats: [
+        { k: '4+', v: 'years shipping production software' },
+        { k: '2', v: 'live commercial sites' },
+        { k: '1', v: 'one-person 3D-printing business' },
+      ],
+    },
+    resume: {
+      eyebrow: 'Résumé',
+      title: 'Experience & education',
+      download: 'Download PDF',
+      role: 'Software Engineer',
+      location: 'Bucharest, Romania',
+      experience: [
+        {
+          company: 'Harman International',
+          role: 'Associate SW Engineer',
+          period: '2022 — present',
+          bullets: [
+            'MBCC Unified Flashing Tool — Python/PySide6 GUI that provisions and flashes IVI/IDC hardware, with VID/PID debug-board detection, per-step logging and CI-safe dummy mode.',
+            'Daimler Infotainment — microservice layer routing UI requests to external ECUs; Thrift-based RPC; steering-wheel and touchpad high-throughput input.',
+            'Cross-domain integration with Time Manager, Dashboard Camera and Car Data. Requirements analysis and customer comms.',
+          ],
+          stack: 'Python · PySide6 · Thrift · Docker · Gerrit · DOORS',
+        },
+        {
+          company: 'Wipro Technologies',
+          role: 'Intern',
+          period: 'Jul — Sep 2021',
+          bullets: [
+            'Unit testing with the Frama-C framework on virtual machines.',
+          ],
+          stack: 'Frama-C · Linux VM',
+        },
+      ],
+      education: [
+        { school: 'Politehnica University of Bucharest', degree: 'MSc, Advanced Mechatronics', period: '2023 — present' },
+        { school: 'Politehnica University of Bucharest', degree: 'BSc, Mechanical Engineering & Mechatronics', period: '2019 — 2023' },
+      ],
+      skills: ['C / C++', 'Microcontroller programming', 'IoT', 'Python', '3D printing & modeling', 'E-commerce', 'Next.js / Web'],
+    },
+    other: {
+      eyebrow: 'Other projects',
+      title: 'Off-screen work.',
+      subtitle: 'What I make when the laptop is closed.',
+      groups: [
+        {
+          name: '3D printing & modeling',
+          items: [
+            { t: 'Detalii3D catalogue', d: 'Figurines, accessories and decorations — designed, printed and shipped in-house.' },
+            { t: 'Custom commissions', d: 'One-off prints from supplied STL or from-scratch CAD.' },
+            { t: 'Small-batch production', d: 'Run of 20–200 pieces with consistent tolerances.' },
+          ],
+        },
+        {
+          name: 'IoT & microcontrollers',
+          items: [
+            { t: 'Custom PCBs', d: 'Breakout boards and sensor nodes for hobby projects.' },
+            { t: 'Firmware in C/C++', d: 'Bare-metal and RTOS targets; serial + I²C + SPI peripherals.' },
+            { t: 'Bench jigs', d: 'Test fixtures for the printing workshop.' },
+          ],
+        },
+      ],
+    },
+    contact: {
+      eyebrow: 'Contact',
+      title: 'Let\'s make something.',
+      body: 'Freelance web work, product storefronts or a bespoke 3D-printing run — I read every message.',
+      email: 'robertmihai.rau@gmail.com',
+      phone: '+40 765 898 137',
+      linkedin: 'linkedin.com/in/robert-raiu',
+      city: 'Bucharest, RO',
+    },
+    footer: 'Raiu Robert-Mihai · Bucharest · Made with care',
+  },
+  ro: {
+    nav: { work: 'Proiecte', about: 'Despre', resume: 'CV', other: 'Altele', contact: 'Contact' },
+    hero: {
+      kicker: 'Portofoliu · 2026',
+      name: 'Raiu Robert-Mihai',
+      lines: ['Inginer Software Asociat', 'C++ · IoT · Web'],
+      tagline: 'Construiesc software embedded profesional în timpul zilei și site-uri funcționale și arătoase după program.',
+      status: 'Disponibil pentru proiecte web freelance',
+      ctaWork: 'Vezi proiectele',
+      ctaContact: 'Contactează-mă',
+      scroll: 'Scroll',
+    },
+    work: {
+      eyebrow: 'Proiecte web selectate',
+      title: 'Proiecte live,\nlivrate cap-coadă.',
+      openLive: 'Deschide site-ul',
+      viewCase: 'Detalii',
+      items: [
+        {
+          id: 'hobbymoto',
+          n: '01',
+          name: 'Hobbymoto',
+          kind: 'E-commerce · Motociclete',
+          url: 'https://hobbymoto.vercel.app/ro/motociclete-rulate',
+          tags: ['Next.js', 'i18n', 'Catalog', 'Responsive'],
+          summary: 'Marketplace românesc pentru motociclete noi și second hand cu căutare filtrată, rute localizate și un flux de calcul al finanțării.',
+          notes: [
+            'Scop: un marketplace românesc care leagă cumpărătorii și vânzătorii de motociclete noi și second hand într-un singur loc',
+            'Rute cu locale (/ro), URL-uri cu slug și metadate SEO per anunț',
+            'Catalog cu server-rendering și filtre — marcă, capacitate cilindrică, an, preț, stare',
+            'Calculator de finanțare calibrat pe piața locală (avans, perioadă, rată lunară)',
+            'Carduri responsive cu galerie foto și căutări salvate',
+            'Stack: Next.js app router, TypeScript, deploy pe Vercel',
+          ],
+          year: '2025',
+        },
+        {
+          id: 'detalii3',
+          n: '02',
+          name: 'Detalii3D',
+          kind: 'Imprimare 3D · E-commerce',
+          url: 'https://detalii3.com',
+          tags: ['Shop', 'Piese custom', 'Lead flow', 'SEO'],
+          summary: 'Magazin online pentru propriul meu atelier de imprimare 3D — figurine printate și pictate, decorațiuni utile și accesorii, plus un formular pentru comenzi custom și serii mici.',
+          notes: [
+            'Scop: magazinul propriului meu atelier de print 3D — figurine printate și pictate, decorațiuni și accesorii',
+            'Flux dublu: produse din stoc + formular de ofertare pentru comenzi custom',
+            'Formularul trimite cererile direct în coada atelierului, cu referințe atașate',
+            'Paginile de produs arată material, dimensiuni și opțiuni de finisaj, cu poze reale din atelier',
+            'Construit în jurul atelierului fizic — capacitatea listată reflectă timpul real de print și pictură',
+            'Gestionat integral de mine: design, print, pictură, livrare, iterație',
+          ],
+          year: '2024',
+        },
+      ],
+    },
+    about: {
+      eyebrow: 'Despre',
+      title: 'Logica unui inginer,\nochiul unui designer.',
+      body: [
+        'Sunt Inginer Software Asociat cu background de Mecatronică și un nucleu C++ — aceeași gndire structurată care ține sistemele embedded pe linie este cea pe care o aplic și pe web.',
+        'Diferența e că serile mi le petrec desenând figurine, accesorii și decorațiuni pentru Detalii3D, propriul meu atelier de print 3D. Așa că site-urile pe care le construiesc sunt inginerite să funcționeze și compuse să arate bine — nimic vibe-coded, doar design gândit și deliberat.',
+        'Pentru detaliile muncii mele de inginer, LinkedIn și CV-ul de mai jos au toată imaginea.',
+      ],
+      stats: [
+        { k: '4+', v: 'ani de software în producție' },
+        { k: '2', v: 'site-uri comerciale live' },
+        { k: '1', v: 'business propriu de print 3D' },
+      ],
+    },
+    resume: {
+      eyebrow: 'CV',
+      title: 'Experiență & educație',
+      download: 'Descarcă PDF',
+      role: 'Inginer Software',
+      location: 'București, România',
+      experience: [
+        {
+          company: 'Harman International',
+          role: 'Inginer SW Asociat',
+          period: '2022 — prezent',
+          bullets: [
+            'MBCC Unified Flashing Tool — GUI Python/PySide6 care provisionează și flash-uiește hardware IVI/IDC, cu detecție VID/PID, logging per-pas și mod dummy pentru CI.',
+            'Daimler Infotainment — strat de microservicii care rutează cererile UI către ECU-uri externe; RPC Thrift; input high-throughput pe volan și touchpad.',
+            'Integrare cross-domain cu Time Manager, Dashboard Camera și Car Data. Analiză de cerințe și comunicare cu clientul.',
+          ],
+          stack: 'Python · PySide6 · Thrift · Docker · Gerrit · DOORS',
+        },
+        {
+          company: 'Wipro Technologies',
+          role: 'Intern',
+          period: 'Iul — Sep 2021',
+          bullets: [
+            'Unit testing cu framework-ul Frama-C pe mașini virtuale.',
+          ],
+          stack: 'Frama-C · Linux VM',
+        },
+      ],
+      education: [
+        { school: 'Universitatea Politehnica din București', degree: 'Master, Mecatronică Avansată', period: '2023 — prezent' },
+        { school: 'Universitatea Politehnica din București', degree: 'Licență, Inginerie Mecanică & Mecatronică', period: '2019 — 2023' },
+      ],
+      skills: ['C / C++', 'Programare microcontrollere', 'IoT', 'Python', 'Imprimare & modelare 3D', 'E-commerce', 'Next.js / Web'],
+    },
+    other: {
+      eyebrow: 'Alte proiecte',
+      title: 'Dincolo de ecran.',
+      subtitle: 'Ce fac când închid laptop-ul.',
+      groups: [
+        {
+          name: 'Imprimare & modelare 3D',
+          items: [
+            { t: 'Catalog Detalii3D', d: 'Figurine, accesorii și decorațiuni — gndite, printate și livrate din atelier.' },
+            { t: 'Comenzi custom', d: 'Print-uri unice pornind de la STL sau din CAD.' },
+            { t: 'Serii mici', d: 'Producție de 20–200 bucăți cu toleranțe consistente.' },
+          ],
+        },
+        {
+          name: 'IoT & microcontrollere',
+          items: [
+            { t: 'PCB-uri custom', d: 'Breakout-uri și senzori pentru proiecte de hobby.' },
+            { t: 'Firmware C/C++', d: 'Bare-metal și RTOS; periferice seriale, I²C, SPI.' },
+            { t: 'Dispozitive de test', d: 'Jig-uri pentru atelierul de printare.' },
+          ],
+        },
+      ],
+    },
+    contact: {
+      eyebrow: 'Contact',
+      title: 'Hai să construim ceva.',
+      body: 'Lucrări web freelance, magazine de produs sau o comandă 3D custom — citesc fiecare mesaj.',
+      email: 'robertmihai.rau@gmail.com',
+      phone: '+40 765 898 137',
+      linkedin: 'linkedin.com/in/robert-raiu',
+      city: 'București, RO',
+    },
+    footer: 'Raiu Robert-Mihai · București · Făcut cu grijă',
+  },
+};
+
+window.I18N = I18N;
