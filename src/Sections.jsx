@@ -136,7 +136,7 @@ function ResumeSection({ t }) {
             <h4>Contact</h4>
             <div style={{ fontFamily: 'var(--ff-ui)', fontSize: 13, color: 'var(--fg-2)', lineHeight: 1.8 }}>
               {t.resume.location}<br/>
-              <a href="mailto:robertmihai.rau@gmail.com" style={{ color: 'var(--accent)' }}>robertmihai.rau@gmail.com</a>
+              <a href="mailto:robertmihai.raiu@gmail.com" style={{ color: 'var(--accent)' }}>robertmihai.raiu@gmail.com</a>
             </div>
           </aside>
         </div>
